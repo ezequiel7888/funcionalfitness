@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\FuncionalFitness.Server.Client\Pages\RegistroUsuario\Component.razor" Link="Component.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\funcionalfitness.BD\funcionalfitness.BD.csproj" />
     <ProjectReference Include="..\..\funcionalfitness.repositorio\funcionalfitness.repositorio.csproj" />
     <ProjectReference Include="..\..\funcionalfitness.shared\funcionalfitness.shared.csproj" />
