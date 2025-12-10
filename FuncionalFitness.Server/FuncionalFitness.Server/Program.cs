@@ -1,5 +1,5 @@
-using funcionalfitness.BD;
-using funcionalfitness.BD.datos.entidades;
+//using funcionalfitness.BD;
+//using funcionalfitness.BD.datos.entidades;
 using funcionalfitness.repositorio;
 using funcionalfitness.servicio.ServiciosHttp;
 using FuncionalFitness.Server.Client.Pages;
@@ -20,11 +20,11 @@ builder.Services.AddSwaggerGen();
     ?? throw new InvalidOperationException("el string de conexion no existe.");
 
     //contexto de la base de datos
-    builder.Services.AddDbContext<GymDbContext>(options =>
-        options.UseSqlServer(conectionString));
+    //builder.Services.AddDbContext<GymDbContext>(options =>
+        //options.UseSqlServer(conectionString));
 
     //registro de repositorios
-    builder.Services.AddScoped<IRepositorio<RegistroUsuario>, Repositorio<RegistroUsuario>>();
+    //builder.Services.AddScoped<IRepositorio<RegistroUsuario>, Repositorio<RegistroUsuario>>();
 
     //registro de servidores
     builder.Services.AddHttpClient();
